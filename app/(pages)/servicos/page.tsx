@@ -1,8 +1,7 @@
+import Servicos from "@/app/parts/home/servicos";
 
-export default function Servicos() {
+export default function PageServicos() {
     return (
-        <div>
-            asd
-        </div>
+        <Servicos />
     );
 }

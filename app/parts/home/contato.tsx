@@ -16,7 +16,7 @@ const Contato = () => {
                 </div>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-x-4">
                     <div className="text-sm md:text-xl bg-gray-200 rounded-xl text-black rounded-xl">
-                        <div className="text-md md:text-lg p-2 md:p-6 my-3 md:mt-0">
+                        <div className="text-md md:text-lg p-6 md:p-6 my-3 md:mt-0">
                             <div className="">
                                 <h3 className="text-orange-500 text-xl md:text-2xl pb-6">Nós ligamos pra você!</h3>
                                 <form action="" method="post" id="form-contact">

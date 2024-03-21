@@ -5,7 +5,7 @@ const Portfolio = () => {
         <section id="portfolio" className="bg-gray-900 py-20">
             <div className="container mx-auto px-4">
                 <h2 className="text-xl md:text-4xl py-6 text-center text-white font-bold">Portfólio</h2>
-                <div className="grid grid-cols-2 lg:grid-cols-3 gap-4">
+                <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
                     <div>
                         <div className="aspect-square rounded-xl sm:rounded-2xl bg-gray-200 bg-cover bg-center flex justify-center items-center">
                             <Image src="/img/servicos/livre-leve-solto.png" width={300} height={300} alt="" className="mx-auto w-2/3" />

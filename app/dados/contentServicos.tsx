@@ -1,4 +1,8 @@
 export default function ContentServicos() {
-    const servicos = "b"; 
+    const servicos = [
+        {
+            
+        }
+    ]; 
     return servicos;
 }

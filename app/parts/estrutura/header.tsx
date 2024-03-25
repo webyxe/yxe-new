@@ -28,11 +28,11 @@ const Header = () => {
                         </div>
                         <nav className="items-center flex">
                             <ul className="mx-2 hidden md:flex text-xl">
-                                <li><Link href="/" className="px-3 text-blue-500 hover:text-orange-500 transition">Início</Link></li>
-                                <li><Link href="/sobre" className="px-3 text-blue-500 hover:text-orange-500 transition">Quem Somos</Link></li>
-                                <li><Link href="/servicos" className="px-3 text-blue-500 hover:text-orange-500 transition">Serviços</Link></li>
-                                <li><Link href="/blog" className="px-3 text-blue-500 hover:text-orange-500 transition">Blog</Link></li>
-                                <li><Link href="/contato" className="px-3 text-blue-500 hover:text-orange-500 transition">Contato</Link></li>
+                                <li><Link href="/" className={"px-3 text-blue-500 hover:text-orange-500 transition " + ((urlPath == "/") ? "!text-orange-500" : null) }>Início</Link></li>
+                                <li><Link href="/sobre" className={"px-3 text-blue-500 hover:text-orange-500 transition " + ((urlPath == "/sobre") ? "!text-orange-500" : null) }>Quem Somos</Link></li>
+                                <li><Link href="/servicos" className={"px-3 text-blue-500 hover:text-orange-500 transition " + ((urlPath == "/servicos") ? "!text-orange-500" : null) }>Serviços</Link></li>
+                                <li><Link href="/blog" className={"px-3 text-blue-500 hover:text-orange-500 transition " + ((urlPath == "/blog") ? "!text-orange-500" : null) }>Blog</Link></li>
+                                <li><Link href="/contato" className={"px-3 text-blue-500 hover:text-orange-500 transition " + ((urlPath == "/contato") ? "!text-orange-500" : null) }>Contato</Link></li>
                             </ul>
                             <a onClick={menuBurger}>
                                 <div className={"hamburger hamburger--squeeze px-4 " + menuActive}>

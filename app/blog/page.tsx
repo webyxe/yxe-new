@@ -4,16 +4,19 @@ import React from 'react';
 export default function Page() {
     const artigos = [
         {
-            "title": "Chatbots serão o futuro do atendimento ao cliente",
-            "img": "/files/artigos/chatbot-o-futuro-do-atendimento.png",
+            slug: "chatbots-serao-o-futuro-do-atendimento-ao-cliente",
+            title: "Chatbots serão o futuro do atendimento ao cliente",
+            img: "/files/artigos/chatbot-o-futuro-do-atendimento.png",
         },
         {
-            "title": "Linkedin Ads: Guia Básico para criação de Anúncios eficazes no linkedin",
-            "img": "/files/artigos/video-patrocinado-no-linkedin.png",
+            slug: "linkedin-ads-guia-basico-para-criacao-de-anuncios-eficazes-no-linkedin",
+            title: "Linkedin Ads: Guia Básico para criação de Anúncios eficazes no linkedin",
+            img: "/files/artigos/video-patrocinado-no-linkedin.png",
         },
         {
-            "title": "Estas são as principais tendências de marketing para 2022",
-            "img": "/files/artigos/5-ferramentas-para-redes-sociais-que-voce-precisa-conhecer.png",
+            slug: "estas-sao-as-principais-tendencias-de-marketing-para-2022",
+            title: "Estas são as principais tendências de marketing para 2022",
+            img: "/files/artigos/5-ferramentas-para-redes-sociais-que-voce-precisa-conhecer.png",
         },
     ];
     return (
@@ -45,8 +48,8 @@ export default function Page() {
                                     </h3>
                                     {
                                         artigos.map((artigoCurrent) => (
-                                            <div  key={artigoCurrent.img} className="w-full py-2">
-                                                <a>
+                                            <div  key={artigoCurrent.slug} className="w-full py-2">
+                                                <a href={"/blog/" + artigoCurrent.slug}>
                                                     <div className="rounded-xl bg-gray-200 overflow-hidden shadow-lg shadow-gray-300 flex">
                                                         <div className="w-1/3 bg-center bg-cover" style={{ backgroundImage: "url('" + artigoCurrent.img + "')" }}></div>
                                                         <div className="w-2/3 px-4 pt-4 pb-1 uppercase">
@@ -141,7 +144,7 @@ export default function Page() {
                                 {
                                     artigos.map((artigoCurrent) => (
                                         <div key={artigoCurrent.img} className="px-2 py-4 h-full transform hover:scale-105 transition duration-500">
-                                            <a target="_blank" className="h-full">
+                                            <a href={"/blog/" + artigoCurrent.slug} className="h-full">
                                                 <div className="bg-gray-200 rounded-xl h-full overflow-hidden">
                                                     <img src={artigoCurrent.img} className="w-full object-cover aspect-video rounded-t-xl md:rounded-t-2xl lazyloaded" alt="" />
                                                     <div className="px-3 md:px-6 pt-3 md:pt-6 pb-2 md:pb-4 uppercase">

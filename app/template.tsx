@@ -10,9 +10,6 @@ const Template = ({children}:any) => {
     return(
         <>
             <Header />
-            {
-                (isHome != '/') ? <HeaderTitle /> : null
-            }
             {children}
             <Footer />
         </>

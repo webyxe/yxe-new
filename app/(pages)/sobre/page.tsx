@@ -1,9 +1,11 @@
+import HeaderTitle from "@/app/parts/estrutura/headerTitle";
 import Image from "next/image";
 import Link from "next/link";
 
 const PageSobre = () => {
     return (
         <>
+            <HeaderTitle titlePage="Quem Somos" />
             <section className="py-10 md:py-16 z-10 relative ">
                 <div className="z-20 relative container mx-auto px-4">
                     <div className="block lg:flex items-center">

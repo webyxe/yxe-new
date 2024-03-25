@@ -1,8 +1,10 @@
 import Image from 'next/image'
+import HeaderTitle from './parts/estrutura/headerTitle'
 
 export default function NotFound() {
     return (
         <>
+            <HeaderTitle titlePage="Não encontrado" />
             <div className="flex flex-col items-center justify-between pt-10 pb-20">
                 <div className="flex flex-col">
                     <span className="text-center font-bold my-10 opacity-30">

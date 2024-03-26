@@ -1,3 +1,4 @@
+import ContentLinks from "@/app/dados/contentLinks";
 import { faFacebook, faInstagram, faWhatsapp } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -49,15 +50,15 @@ const Footer = () => {
                             <div id="menu-principal-footer" className="menu-principal-container uppercase text-sm">
                                 <ul id="footer-nav" className="font-reading">
                                     <li id="nav-menu-item-21" className="py-2">
-                                        <Link href="" target="_blank"
+                                        <Link href={ContentLinks.email} target="_blank"
                                             className="main-menu-link text-white hover:text-orange-500 transition break-all flex">
-                                            <FontAwesomeIcon className="w-4 h-4 mx-2" icon={faEnvelope} /> contato@yxe.com.br
+                                            <FontAwesomeIcon className="w-4 h-4 mx-2" icon={faEnvelope} /> {ContentLinks.emailShow}
                                         </Link>
                                     </li>
                                     <li id="nav-menu-item-21" className="py-2">
-                                        <Link href="" target="_blank"
+                                        <Link href={ContentLinks.phone} target="_blank"
                                             className="main-menu-link text-white hover:text-orange-500 transition break-all flex">
-                                            <FontAwesomeIcon className="w-4 h-4 mx-2" icon={faWhatsapp} />  (21) 99999-9999
+                                            <FontAwesomeIcon className="w-4 h-4 mx-2" icon={faWhatsapp} />  {ContentLinks.phoneShow}
                                         </Link>
                                     </li>
                                 </ul>
@@ -67,12 +68,12 @@ const Footer = () => {
                             <h3 className="py-2 mb-2 text-orange-500 text-2xl">REDES SOCIAIS</h3>
                             <div className="py-2 md:text-lg flex text-gray-900 gap-5">
                                 <div>
-                                    <Link href="" target="_blank" className="text-white">
+                                    <Link href={ContentLinks.facebook} target="_blank" className="text-white">
                                         <FontAwesomeIcon icon={faFacebook} className="text-white hover:text-orange-500 w-6 h-6" />
                                     </Link>
                                 </div>
                                 <div>
-                                    <Link href="" target="_blank" className="text-white">
+                                    <Link href={ContentLinks.instagram} target="_blank" className="text-white">
                                         <FontAwesomeIcon icon={faInstagram} className=" text-white hover:text-orange-500 w-6 h-6" />
                                     </Link>
                                 </div>

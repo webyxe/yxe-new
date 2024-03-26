@@ -1,3 +1,4 @@
+import ContentLinks from "@/app/dados/contentLinks";
 import { faFacebookSquare, faInstagram, faYoutube, faWhatsapp } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -17,22 +18,22 @@ const Banner = () => {
             </div>
             <div className="absolute flex lg:block justify-center z-50 left-0 bottom-0 font-normal p-2 md:text-lg w-full md:w-auto">
                 <div className="hover:scale-105 transition duration-500">
-                    <Link className="block text-blue-500 hover:text-orange-500 p-3 flex justify-center items-center rounded-lg my-2" target="_blank" href="https://pt-br.facebook.com/fabiofreitasbr">
+                    <Link className="block text-blue-500 hover:text-orange-500 p-3 flex justify-center items-center rounded-lg my-2" target="_blank" href={ContentLinks.facebook}>
                         <FontAwesomeIcon icon={faFacebookSquare} className="h-8 w-8" />
                     </Link>
                 </div>
                 <div className="hover:scale-105 transition duration-500">
-                    <Link className="block text-blue-500 hover:text-orange-500 p-3 flex justify-center items-center rounded-lg my-2" target="_blank" href="https://www.instagram.com/fabiofreitasbr/">
+                    <Link className="block text-blue-500 hover:text-orange-500 p-3 flex justify-center items-center rounded-lg my-2" target="_blank" href={ContentLinks.instagram}>
                         <FontAwesomeIcon icon={faInstagram} className="h-8 w-8" />
                     </Link>
                 </div>
                 <div className="hover:scale-105 transition duration-500">
-                    <Link className="block text-blue-500 hover:text-orange-500 p-3 flex justify-center items-center rounded-lg my-2" target="_blank" href="https://www.youtube.com/@fabiofreitasbr">
+                    <Link className="block text-blue-500 hover:text-orange-500 p-3 flex justify-center items-center rounded-lg my-2" target="_blank" href={ContentLinks.youtube}>
                         <FontAwesomeIcon icon={faYoutube} className="h-8 w-8" />
                     </Link>
                 </div>
                 <div className="hover:scale-105 transition duration-500">
-                    <Link className="block text-blue-500 hover:text-orange-500 p-3 flex justify-center items-center rounded-lg my-2" target="_blank" href="https://www.youtube.com/@fabiofreitasbr">
+                    <Link className="block text-blue-500 hover:text-orange-500 p-3 flex justify-center items-center rounded-lg my-2" target="_blank" href={ContentLinks.email}>
                         <FontAwesomeIcon icon={faEnvelope} className="h-8 w-8" />
                     </Link>
                 </div>

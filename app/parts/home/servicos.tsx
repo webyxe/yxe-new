@@ -11,7 +11,7 @@ const Servicos = () => {
                     {
                         ContentServicos.map((singleServicos) => (
                             <Link href="#" key={singleServicos.slug}>
-                                <div className="bg-orange-600 sm:h-64 rounded-xl sm:rounded-3xl text-center flex flex-col justify-center items-center text-white text-lg sm:text-2xl px-2 py-4 md:p-4">
+                                <div className="h-full bg-orange-600 sm:h-64 rounded-xl sm:rounded-3xl text-center flex flex-col justify-center items-center text-white text-lg sm:text-2xl px-2 py-4 md:p-4">
                                     <FontAwesomeIcon icon={singleServicos.icon} className="h-10 w-10 text-4xl mx-auto text-gray-200" />
                                     <h3 className="text-xs md:text-xl py-4 text-gray-200">{singleServicos.title}</h3>
                                     <h3 className="text-xs md:text-sm text-gray-200 font-light">{singleServicos.content}</h3>

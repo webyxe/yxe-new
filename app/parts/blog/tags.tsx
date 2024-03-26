@@ -8,59 +8,11 @@ export default function BlogTags() {
                 <div>
                     <Link href="">
                         <span className="block py-2 px-2 md:px-3 text-xs md:text-base border md:border-2 border-blue-500 hover:bg-blue-500 text-blue-500 hover:text-white transition-all font-bold">
-                            Jogos
+                            Dicas
                         </span>
                     </Link>
                 </div>
-                <div>
-                    <Link href="">
-                        <span className="block py-2 px-2 md:px-3 text-xs md:text-base border md:border-2 border-blue-500 hover:bg-blue-500 text-blue-500 hover:text-white transition-all font-bold">
-                            Web
-                        </span>
-                    </Link>
-                </div>
-                <div>
-                    <Link href="">
-                        <span className="block py-2 px-2 md:px-3 text-xs md:text-base border md:border-2 border-blue-500 hover:bg-blue-500 text-blue-500 hover:text-white transition-all font-bold">
-                            Fotografia
-                        </span>
-                    </Link>
-                </div>
-                <div>
-                    <Link href="">
-                        <span className="block py-2 px-2 md:px-3 text-xs md:text-base border md:border-2 border-blue-500 hover:bg-blue-500 text-blue-500 hover:text-white transition-all font-bold">
-                            Filmagem
-                        </span>
-                    </Link>
-                </div>
-                <div>
-                    <Link href="">
-                        <span className="block py-2 px-2 md:px-3 text-xs md:text-base border md:border-2 border-blue-500 hover:bg-blue-500 text-blue-500 hover:text-white transition-all font-bold">
-                            Marketing
-                        </span>
-                    </Link>
-                </div>
-                <div>
-                    <Link href="">
-                        <span className="block py-2 px-2 md:px-3 text-xs md:text-base border md:border-2 border-blue-500 hover:bg-blue-500 text-blue-500 hover:text-white transition-all font-bold">
-                            Mídia Social
-                        </span>
-                    </Link>
-                </div>
-                <div>
-                    <Link href="">
-                        <span className="block py-2 px-2 md:px-3 text-xs md:text-base border md:border-2 border-blue-500 hover:bg-blue-500 text-blue-500 hover:text-white transition-all font-bold">
-                            Design
-                        </span>
-                    </Link>
-                </div>
-                <div>
-                    <Link href="">
-                        <span className="block py-2 px-2 md:px-3 text-xs md:text-base border md:border-2 border-blue-500 hover:bg-blue-500 text-blue-500 hover:text-white transition-all font-bold">
-                            Música
-                        </span>
-                    </Link>
-                </div>
+                
             </div>
         </div>
     )

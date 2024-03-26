@@ -13,7 +13,7 @@ const Footer = () => {
                     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-6 md:gap-x-16">
                         <div className="md:block flex justify-center md:col-span-3 lg:col-span-1">
                             <Link href="/">
-                                <Image alt="" data-src="/img/logo-white.png" width={500} height={500} className="w-1/2 mx-auto my-4 ls-is-cached lazyloaded" src="/img/logo-white.png" />
+                                <Image alt="" data-src="/img/logo-white.png" width={500} height={500} className="max-w-36 w-1/2 mx-auto my-4 ls-is-cached lazyloaded" src="/img/logo-white.png" />
                             </Link>
                         </div>
                         <div className="my-4 md:my-0 flex flex-col items-center text-center md:text-left md:block">

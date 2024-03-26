@@ -15,7 +15,7 @@ const Contato = () => {
                         <h2 className="text-orange-500  font-medium text-xl md:text-3xl my-2">Entre em contato</h2>
                     </div>
                 </div>
-                <div className="flex gap-x-4">
+                <div className="block md:flex items-start gap-x-4">
                     <div className="w-full md:w-1/2 text-sm md:text-xl bg-gray-200 rounded-xl text-black">
                         <div className="text-md md:text-lg p-6 md:p-6 my-3 md:mt-0">
                             <div className="">
@@ -35,7 +35,7 @@ const Contato = () => {
                         </div>
                     </div>
                     <div className="w-full md:w-1/2 text-sm md:text-xl text-orange-500 rounded-xl">
-                        <div className="text-md md:text-base px-6 my-3 md:mt-0">
+                        <div className="text-md md:text-base md:px-6 my-3 md:mt-0">
                             <div className="text-lg md:text-xl">
                                 <h3 className="font-normal ">Informações</h3>
                                 <p className="text-gray-900 text-base py-2">Entre em contato conosco através de um dos nossos canais de atendimento.</p>
@@ -44,7 +44,7 @@ const Contato = () => {
                                 <div
                                     className="flex justify-start items-center px-2 pt-4 pb-6 my-4 rounded-lg bg-gray-200 break-all text-gray-900">
                                     <div className="px-4 md:px-6 text-xl md:text-4xl">
-                                        <FontAwesomeIcon icon={faPhone} className="h-10 w-10 text-blue-600" />
+                                        <FontAwesomeIcon icon={faPhone} className="w-6 md:h-10 md:w-10 text-blue-600" />
                                     </div>
                                     <div>
                                         <div className="py-1 font-bold text-orange-500 ">Telefone:</div>
@@ -55,7 +55,7 @@ const Contato = () => {
                             <Link href={ContentLinks.phone2} target="_blank">
                                 <div className="flex justify-start items-center px-2 pt-4 pb-6 my-4 rounded-lg bg-gray-200 break-all text-gray-900">
                                     <div className="px-4 md:px-6 text-xl md:text-4xl">
-                                        <FontAwesomeIcon icon={faPhone} className="h-10 w-10 text-blue-600" />
+                                        <FontAwesomeIcon icon={faPhone} className="w-6 md:h-10 md:w-10 text-blue-600" />
                                     </div>
                                     <div>
                                         <div className="py-1 font-bold text-orange-500 ">Telefone Secundário:</div>
@@ -66,7 +66,7 @@ const Contato = () => {
                             <Link href={ContentLinks.email} target="_blank">
                                 <div className="flex justify-start items-center px-2 pt-4 pb-6 my-4 rounded-lg bg-gray-200 break-all text-gray-900">
                                     <div className="px-4 md:px-6 text-xl md:text-4xl">
-                                        <FontAwesomeIcon icon={faEnvelope} className="h-10 w-10 text-blue-600" />
+                                        <FontAwesomeIcon icon={faEnvelope} className="w-6 md:h-10 md:w-10 text-blue-600" />
                                     </div>
                                     <div>
                                         <div className="py-1 font-bold text-orange-500 ">E-mail:</div>
@@ -78,7 +78,7 @@ const Contato = () => {
                             <Link href={ContentLinks.maps} target="_blank">
                                 <div className="flex justify-start items-center px-2 pt-4 pb-6 my-4 rounded-lg bg-gray-200 break-all text-gray-900">
                                     <div className="px-4 md:px-6 text-xl md:text-4xl">
-                                        <FontAwesomeIcon icon={faMapMarkerAlt} className="h-10 w-10 text-blue-600" />
+                                        <FontAwesomeIcon icon={faMapMarkerAlt} className="w-6 md:h-10 md:w-10 text-blue-600" />
                                     </div>
                                     <div>
                                         <div className="py-1 font-bold text-orange-500 ">Endereço:</div>

@@ -4,6 +4,7 @@ import { faArrowRight, faMap, faPhone } from "@fortawesome/free-solid-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Image from "next/image";
 import Link from "next/link";
+import FormContato from "../estrutura/formContato";
 
 const Contato = () => {
     return (
@@ -19,16 +20,7 @@ const Contato = () => {
                         <div className="text-md md:text-lg p-6 md:p-6 my-3 md:mt-0">
                             <div className="">
                                 <h3 className="text-orange-500 text-xl md:text-2xl pb-6">Nós ligamos pra você!</h3>
-                                <form action="" method="post" id="form-contact">
-                                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
-                                        <input type="text" name="name" id="name" className="bg-white w-full py-3 px-6 rounded-lg text-lg font-light bg-transparent border border-orange-500 text-orange-500 lg:col-span-2" placeholder="Nome" />
-                                        <input type="text" name="email" id="email" className="bg-white w-full py-3 px-6 rounded-lg text-lg font-light bg-transparent border border-orange-500 text-orange-500" placeholder="E-mail" />
-                                        <input type="text" name="phone" id="phone" className="bg-white w-full py-3 px-6 rounded-lg text-lg font-light bg-transparent border border-orange-500 text-orange-500" placeholder="Telefone" />
-                                        <div>
-                                            <button type="submit" className="py-1 px-2 md:px-6 rounded-md md:rounded-lg bg-blue-600 transition ease-in-out duration-300 delay-300 text-white uppercase flex justify-center items-center gap-x-2"><FontAwesomeIcon icon={faArrowRight} className="h-4 w-4" />Enviar</button>
-                                        </div>
-                                    </div>
-                                </form>
+                                <FormContato />
                             </div>
                             <div className="flex justify-center items-center">
                                 <hr className="border border-gray-100 w-full" />

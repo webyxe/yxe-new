@@ -34,22 +34,22 @@ const Header = () => {
                                 <li><Link href="/blog" className={"px-3 text-blue-500 hover:text-orange-500 transition " + ((urlPath == "/blog") ? "!text-orange-500" : null) }>Blog</Link></li>
                                 <li><Link href="/contato" className={"px-3 text-blue-500 hover:text-orange-500 transition " + ((urlPath == "/contato") ? "!text-orange-500" : null) }>Contato</Link></li>
                             </ul>
-                            <a onClick={menuBurger}>
+                            <Link href="#" onClick={menuBurger}>
                                 <div className={"hamburger hamburger--squeeze px-4 " + menuActive}>
                                     <div className="hamburger-box">
                                         <div className="hamburger-inner"></div>
                                     </div>
                                 </div>
-                            </a>
+                            </Link>
                         </nav>
                     </div>
                 </div>
             </header>
             <nav className={"fixed top-0 h-screen w-72 bg-blue-500 z-50 text-base transition-all duration-300 ease-in-out font-open " + menuNavigation} id="header-bar-mobile">
                 <div className="hidden -right-full"></div>
-                <a className="button-close absolute top-0 right-0 p-4 text-2xl rounded-md text-white hover:text-orange-500 transition-colors" onClick={menuBurger}>
+                <Link href="#" className="button-close absolute top-0 right-0 p-4 text-2xl rounded-md text-white hover:text-orange-500 transition-colors" onClick={menuBurger}>
                     <FontAwesomeIcon icon={faXmark} className="h-8 w-8" />
-                </a>
+                </Link>
                 <div className="block">
                     <ul className="text-lg p-4">
                         <li className="py-2"><Link href="/" className="p-3 text-gray-100" onClick={menuBurger}>Home</Link></li>

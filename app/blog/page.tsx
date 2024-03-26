@@ -5,6 +5,8 @@ import BlogTags from '../parts/blog/tags';
 import BlogRecentes from '../parts/blog/recentes';
 import ContentArtigos from '../dados/contentArtigos';
 import BlogPagination from '../parts/blog/pagination';
+import Link from 'next/link';
+import Image from 'next/image';
 
 export default function Page({searchParams}: any) {
     const listArtigos = (searchParams.s) ? ContentArtigos.filter(artigo => artigo.title.includes(searchParams.s)): ContentArtigos;
@@ -25,15 +27,15 @@ export default function Page({searchParams}: any) {
                                 {
                                     listArtigos.map((artigoCurrent) => (
                                         <div key={artigoCurrent.img} className="px-2 py-4 h-full transform hover:scale-105 transition duration-500">
-                                            <a href={"/blog/" + artigoCurrent.slug} className="h-full">
+                                            <Link href={"/blog/" + artigoCurrent.slug} className="h-full">
                                                 <div className="bg-gray-200 rounded-xl h-full overflow-hidden">
-                                                    <img src={artigoCurrent.img} className="w-full object-cover aspect-video rounded-t-xl md:rounded-t-2xl lazyloaded" alt="" />
+                                                    <Image src={artigoCurrent.img} width={296} height={166} className="w-full object-cover aspect-video rounded-t-xl md:rounded-t-2xl lazyloaded" alt="" />
                                                     <div className="px-3 md:px-6 pt-3 md:pt-6 pb-2 md:pb-4 uppercase">
                                                         <h3 className="text-xs md:text-sm xl:text-base text-orange-600 font-medium pb-3 md:pb-6">{artigoCurrent.title}</h3>
                                                         <div className="text-blue-500 text-right py-2 text-sm md:text-base font-bold">VER MAIS</div>
                                                     </div>
                                                 </div>
-                                            </a>
+                                            </Link>
                                         </div>
                                     ))
                                 }   

@@ -1,7 +1,7 @@
 import { faSearch } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-export default function BlogSearch() {
+export default function BlogSearch({params}: any) {
     return (
         <div className="mb-4 md:mb-10">
             <form action="/blog" method="GET">

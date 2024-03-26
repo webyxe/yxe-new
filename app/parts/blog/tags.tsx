@@ -7,56 +7,56 @@ export default function BlogTags() {
             <div className="my-2 flex flex-wrap gap-2 md:gap-4">
                 <div>
                     <Link href="">
-                        <span className="inline-block my-1 mx-1 md:mx-0 md:my-2 py-2 px-2 md:px-4 text-xs md:text-base text-blue-500 font-bold uppercase border md:border-2 border-blue-500">
+                        <span className="block py-2 px-2 md:px-3 text-xs md:text-base border md:border-2 border-blue-500 hover:bg-blue-500 text-blue-500 hover:text-white transition-all font-bold">
                             Jogos
                         </span>
                     </Link>
                 </div>
                 <div>
                     <Link href="">
-                        <span className="inline-block my-1 mx-1 md:mx-0 md:my-2 py-2 px-2 md:px-4 text-xs md:text-base text-blue-500 font-bold uppercase border md:border-2 border-blue-500">
+                        <span className="block py-2 px-2 md:px-3 text-xs md:text-base border md:border-2 border-blue-500 hover:bg-blue-500 text-blue-500 hover:text-white transition-all font-bold">
                             Web
                         </span>
                     </Link>
                 </div>
                 <div>
                     <Link href="">
-                        <span className="inline-block my-1 mx-1 md:mx-0 md:my-2 py-2 px-2 md:px-4 text-xs md:text-base text-blue-500 font-bold uppercase border md:border-2 border-blue-500">
+                        <span className="block py-2 px-2 md:px-3 text-xs md:text-base border md:border-2 border-blue-500 hover:bg-blue-500 text-blue-500 hover:text-white transition-all font-bold">
                             Fotografia
                         </span>
                     </Link>
                 </div>
                 <div>
                     <Link href="">
-                        <span className="inline-block my-1 mx-1 md:mx-0 md:my-2 py-2 px-2 md:px-4 text-xs md:text-base text-blue-500 font-bold uppercase border md:border-2 border-blue-500">
+                        <span className="block py-2 px-2 md:px-3 text-xs md:text-base border md:border-2 border-blue-500 hover:bg-blue-500 text-blue-500 hover:text-white transition-all font-bold">
                             Filmagem
                         </span>
                     </Link>
                 </div>
                 <div>
                     <Link href="">
-                        <span className="inline-block my-1 mx-1 md:mx-0 md:my-2 py-2 px-2 md:px-4 text-xs md:text-base text-blue-500 font-bold uppercase border md:border-2 border-blue-500">
+                        <span className="block py-2 px-2 md:px-3 text-xs md:text-base border md:border-2 border-blue-500 hover:bg-blue-500 text-blue-500 hover:text-white transition-all font-bold">
                             Marketing
                         </span>
                     </Link>
                 </div>
                 <div>
                     <Link href="">
-                        <span className="inline-block my-1 mx-1 md:mx-0 md:my-2 py-2 px-2 md:px-4 text-xs md:text-base text-blue-500 font-bold uppercase border md:border-2 border-blue-500">
+                        <span className="block py-2 px-2 md:px-3 text-xs md:text-base border md:border-2 border-blue-500 hover:bg-blue-500 text-blue-500 hover:text-white transition-all font-bold">
                             Mídia Social
                         </span>
                     </Link>
                 </div>
                 <div>
                     <Link href="">
-                        <span className="inline-block my-1 mx-1 md:mx-0 md:my-2 py-2 px-2 md:px-4 text-xs md:text-base text-blue-500 font-bold uppercase border md:border-2 border-blue-500">
+                        <span className="block py-2 px-2 md:px-3 text-xs md:text-base border md:border-2 border-blue-500 hover:bg-blue-500 text-blue-500 hover:text-white transition-all font-bold">
                             Design
                         </span>
                     </Link>
                 </div>
                 <div>
                     <Link href="">
-                        <span className="inline-block my-1 mx-1 md:mx-0 md:my-2 py-2 px-2 md:px-4 text-xs md:text-base text-blue-500 font-bold uppercase border md:border-2 border-blue-500">
+                        <span className="block py-2 px-2 md:px-3 text-xs md:text-base border md:border-2 border-blue-500 hover:bg-blue-500 text-blue-500 hover:text-white transition-all font-bold">
                             Música
                         </span>
                     </Link>

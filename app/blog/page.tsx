@@ -4,8 +4,10 @@ import BlogSearch from '../parts/blog/search';
 import BlogTags from '../parts/blog/tags';
 import BlogRecentes from '../parts/blog/recentes';
 import ContentArtigos from '../dados/contentArtigos';
+import BlogPagination from '../parts/blog/pagination';
 
-export default function Page() {
+export default function Page({searchParams}: any) {
+    const listArtigos = (searchParams.s) ? ContentArtigos.filter(artigo => artigo.title.includes(searchParams.s)): ContentArtigos;
     return (
         <main>
             <section className="py-8">
@@ -21,7 +23,7 @@ export default function Page() {
                         <div className="w-full md:w-2/3 lg:w-3/4">
                             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 auto-rows-fr">
                                 {
-                                    ContentArtigos.map((artigoCurrent) => (
+                                    listArtigos.map((artigoCurrent) => (
                                         <div key={artigoCurrent.img} className="px-2 py-4 h-full transform hover:scale-105 transition duration-500">
                                             <a href={"/blog/" + artigoCurrent.slug} className="h-full">
                                                 <div className="bg-gray-200 rounded-xl h-full overflow-hidden">
@@ -36,38 +38,7 @@ export default function Page() {
                                     ))
                                 }   
                             </div>
-                            <div className="mx-auto block text-center my-8">
-                                <ul className="inline-flex -space-x-px">
-                                    <li> <a className="py-2 px-3 text-blue-500 bg-blue-500 border border-gray-300">
-                                            1
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a className="py-2 px-3 leading-tight text-blue-500 bg-white border border-gray-300 hover:bg-red-100"
-                                            href="/page/2/">
-                                            2
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a className="py-2 px-3 leading-tight text-blue-500 bg-white border border-gray-300 hover:bg-red-100"
-                                            href="/page/3/">
-                                            3
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a className="py-2 px-3 leading-tight text-blue-500 bg-white border border-gray-300 hover:bg-red-100"
-                                            href="/page/23/">
-                                            23
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a className="py-2 px-3 leading-tight text-blue-500 bg-white rounded-r-lg border border-gray-300 hover:bg-red-100"
-                                            href="/page/2/">
-                                            Próximo »
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
+                            <BlogPagination />
                         </div>
                     </div>
                 </div>

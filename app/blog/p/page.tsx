@@ -1,12 +1,12 @@
 "use client"
 import React from 'react';
-import BlogSearch from '../parts/blog/search';
-import BlogTags from '../parts/blog/tags';
-import BlogRecentes from '../parts/blog/recentes';
-import ContentArtigos from '../dados/contentArtigos';
+import BlogSearch from '../../parts/blog/search';
+import BlogTags from '../../parts/blog/tags';
+import BlogRecentes from '../../parts/blog/recentes';
+import ContentArtigos from '../../dados/contentArtigos';
 import Link from 'next/link';
 import Image from 'next/image';
-import PaginationElement from '../parts/estrutura/paginationElement';
+import PaginationElement from '../../parts/estrutura/paginationElement';
 
 export default function Page({ searchParams }: any) {
     const listArtigos = (searchParams.s) ? ContentArtigos.filter(artigo => artigo.title.includes(searchParams.s)) : ContentArtigos;

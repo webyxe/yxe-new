@@ -4,14 +4,11 @@ import BlogSearch from "@/app/parts/blog/search";
 import BlogTags from "@/app/parts/blog/tags";
 import parse from 'html-react-parser';
 
-
-
 export default async function PageBlogSingle({ params, props }: any) {
     const artigoCurrent = ContentArtigos.filter(artigo => artigo.slug.includes(params.slug));
 
     return (
         <main>
-            
             <section className="py-8">
                 <div className="container mx-auto px-4">
                     <div className="flex flex-wrap md:flex-row-reverse">

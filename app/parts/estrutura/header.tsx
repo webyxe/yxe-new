@@ -5,6 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
+import HeaderMobile from "./headerMobile";
 
 const Header = () => {
     const urlPath = usePathname();
@@ -45,21 +46,7 @@ const Header = () => {
                     </div>
                 </div>
             </header>
-            <nav className={"fixed top-0 h-screen w-72 bg-blue-500 z-50 text-base transition-all duration-300 ease-in-out font-open " + menuNavigation} id="header-bar-mobile">
-                <div className="hidden -right-full"></div>
-                <Link href="#" className="button-close absolute top-0 right-0 p-4 text-2xl rounded-md text-white hover:text-orange-500 transition-colors" onClick={menuBurger}>
-                    <FontAwesomeIcon icon={faXmark} className="h-8 w-8" />
-                </Link>
-                <div className="block">
-                    <ul className="text-lg p-4">
-                        <li className="py-2"><Link href="/" className="p-3 text-gray-100" onClick={menuBurger}>Home</Link></li>
-                        <li className="py-2"><Link href="/sobre" className="p-3 text-gray-100" onClick={menuBurger}>Quem Somos</Link></li>
-                        <li className="py-2"><Link href="/servicos" className="p-3 text-gray-100" onClick={menuBurger}>Serviços</Link></li>
-                        <li className="py-2"><Link href="/blog" className="p-3 text-gray-100" onClick={menuBurger}>Blog</Link></li>
-                        <li className="py-2"><Link href="/contato" className="p-3 text-gray-100" onClick={menuBurger}>Contato</Link></li>
-                    </ul>
-                </div>
-            </nav>
+            <HeaderMobile menuNavigation={menuNavigation} menuBurger={menuBurger} urlPath={urlPath} />
         </div>
     );
 }

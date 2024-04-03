@@ -1,4 +1,4 @@
-import React, { Suspense } from 'react';
+import React from 'react';
 import BlogSearch from '../parts/blog/search';
 import BlogTags from '../parts/blog/tags';
 import BlogRecentes from '../parts/blog/recentes';
@@ -7,17 +7,9 @@ import Link from 'next/link';
 import Image from 'next/image';
 import PaginationElement from '../parts/estrutura/paginationElement';
 
-function Loading() {
-    return(
-        <>
-        CARREGANDO
-        </>
-    );
-}
-
-export default async function ArchiveBlog({ searchParams }: any) {
-    const dados = await ContentArtigos({searchParams});
-    const listData = dados.data;
+export default async function ArchiveBlog({ params, searchParams }: any) {
+    const dados = await ContentArtigos({params, searchParams});
+    const listData = dados.data.artigos;
     return (
         <main>
             <section className="py-8">
@@ -26,15 +18,14 @@ export default async function ArchiveBlog({ searchParams }: any) {
                         <div className="md:w-1/3 lg:w-1/4 px-4  md:block">
                             <aside>
                                 <BlogSearch params={searchParams} />
-                                <BlogRecentes artigos={listData} />
+                                <BlogRecentes />
                                 <BlogTags />
                             </aside>
                         </div>
                         <div className="w-full md:w-2/3 lg:w-3/4">
                             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 auto-rows-fr">
-                                <Suspense fallback={<Loading />}>
                                 {
-                                    listData.map((artigoCurrent) => (
+                                    listData.map((artigoCurrent:any) => (
                                         <div key={artigoCurrent.id} className="px-2 py-4 h-full transform hover:scale-105 transition duration-500">
                                             <Link href={"/blog/" + artigoCurrent.slug} className="h-full">
                                                 <div className="bg-gray-200 rounded-xl h-full overflow-hidden">
@@ -48,7 +39,6 @@ export default async function ArchiveBlog({ searchParams }: any) {
                                         </div>
                                     ))
                                 }
-                                </Suspense>
                             </div>
                             <PaginationElement />
                         </div>

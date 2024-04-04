@@ -6,7 +6,7 @@ export default async function ContentArtigos({params, searchParams} : any) {
     const artigos = await axios.get('http://localhost:4000/artigos', {
         params: {
             search,
-            slug
+            page: slug
         }
     });
     return artigos;

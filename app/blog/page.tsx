@@ -42,7 +42,7 @@ export default async function ArchiveBlog({ params, searchParams }: any) {
                                     }
                                 </Suspense>
                             </div>
-                            <PaginationElement countTotal={countTotal} pageCurrent={pageCurrent}  quantityPerPage={quantityPerPage} />
+                            <PaginationElement countTotal={countTotal} pageCurrent={pageCurrent}  quantityPerPage={quantityPerPage} searchParams={searchParams} />
                         </div>
                     </div>
                 </div>

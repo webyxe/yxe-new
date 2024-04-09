@@ -1,8 +1,8 @@
 import React, { Suspense } from 'react';
-import BlogSearch from '../parts/blog/search';
-import BlogTags from '../parts/blog/tags';
-import BlogRecentes from '../parts/blog/recentes';
-import PaginationElement from '../parts/estrutura/paginationElement';
+import BlogSearch from '@/app/parts/blog/search';
+import BlogTags from '@/app/parts/blog/tags';
+import BlogRecentes from '@/app/parts/blog/recentes';
+import PaginationElement from '@/app/parts/estrutura/paginationElement';
 import ContentArtigos from '@/app/dados/contentArtigos';
 import Link from 'next/link';
 import Image from 'next/image';

@@ -3,7 +3,7 @@ import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
 import { faMapMarkerAlt, faPhone } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Link from "next/link";
-import FormContato from "../estrutura/formContato";
+import FormContato from "@/app/parts/estrutura/formContato";
 import ContentLinks from "@/app/dados/contentLinks";
 
 const Contato = () => {

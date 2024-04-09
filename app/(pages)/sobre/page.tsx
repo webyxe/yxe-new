@@ -1,4 +1,5 @@
 import HeaderTitle from "@/app/parts/estrutura/headerTitle";
+import CallToAction from "@/app/parts/home/calltoaction";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -63,6 +64,7 @@ const PageSobre = () => {
                     </div>
                 </div>
             </section>
+            <CallToAction />
         </>
     );
 }

@@ -1,4 +1,4 @@
-import ListServicos from "../estrutura/listServicos";
+import ListServicos from "@/app/parts/estrutura/listServicos";
 
 const Servicos = () => {
     return (

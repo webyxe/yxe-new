@@ -5,6 +5,7 @@ import Estrutura from "./parts/home/estrutura";
 import Portfolio from "./parts/home/portfolio";
 import QuemSomos from "./parts/home/quem-somos";
 import Servicos from "./parts/home/servicos";
+import VideoHome from "./parts/home/videoHome";
 
 
 export default function Home() {
@@ -14,7 +15,8 @@ export default function Home() {
             <QuemSomos />
             <Servicos />
             <Estrutura />
-            <Portfolio />
+            {/* <Portfolio /> */}
+            <VideoHome />
             <Canais />
             <Contato />
         </div>

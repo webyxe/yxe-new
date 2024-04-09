@@ -1,5 +1,6 @@
 import HeaderTitle from "@/app/parts/estrutura/headerTitle";
 import ListServicos from "@/app/parts/estrutura/listServicos";
+import CallToAction from "@/app/parts/home/calltoaction";
 
 export default function PageServicos() {
     return (
@@ -10,6 +11,7 @@ export default function PageServicos() {
                     <ListServicos />
                 </div>
             </section>
+            <CallToAction />
         </>
     );
 }

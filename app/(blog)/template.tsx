@@ -14,10 +14,10 @@ export default function TemplateBlog({ children }: any) {
                         <div className="flex flex-wrap md:flex-row-reverse">
                             <div className="md:w-1/3 lg:w-1/4 px-4 md:block">
                                 <aside>
-                                    <BlogSearch  />
                                     <Suspense>
-                                        <BlogRecentes />
+                                        <BlogSearch  />
                                     </Suspense>
+                                    <BlogRecentes />
                                     <BlogTags />
                                 </aside>
                             </div>

@@ -13,7 +13,7 @@ export async function ListBlogRecentes() {
                     <div key={artigoCurrent.slug} className="w-full py-2">
                         <Link href={"/blog/" + artigoCurrent.slug}>
                             <div className="rounded-xl bg-gray-200 overflow-hidden shadow-lg shadow-gray-300 flex">
-                                <Image className="w-1/3 bg-center bg-cover object-cover" width={103} height={108} src={"/files/artigos/" + artigoCurrent.img} />
+                                <Image className="w-1/3 bg-center bg-cover object-cover" alt={artigoCurrent.title} width={103} height={108} src={"/files/artigos/" + artigoCurrent.img} />
                                 <div className="w-2/3 px-4 pt-4 pb-1 uppercase">
                                     <h3 className="text-xs text-orange-600 font-medium pb-2">
                                         {artigoCurrent.title}

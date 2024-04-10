@@ -20,7 +20,7 @@ export async function SingleSlug({ params }: any) {
     }
 }
 
-export default async function PageBlogSingle({ ...props }: any) {
+export default function PageBlogSingle({ ...props }: any) {
     return (
         <Suspense fallback={<LoadingSinglePost />}>
             <SingleSlug {...props} />

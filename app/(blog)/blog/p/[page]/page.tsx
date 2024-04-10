@@ -1,4 +1,4 @@
-import ArchiveBlog from "@/app/blog/page";
+import ArchiveBlog from "@/app/(blog)/blog/page";
 
 const PaginationBlog = ({params, searchParams}: any) => {
     return(

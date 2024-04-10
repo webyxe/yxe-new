@@ -1,15 +1,15 @@
 import axios from "axios";
 import Image from "next/image";
 import Link from "next/link";
+import { Suspense } from "react";
+import { LoadingRecentes } from "../estrutura/loading";
 
-export default async function BlogRecentes() {
+export async function ListBlogRecentes() {
     const { data } = await axios.get('http://localhost:4000/artigos/recentes');
     return (
-
-        <div className="mb-4 md:mb-10 hidden md:block">
-            <h3 className="text-xl my-2 font-medium text-blue-500 uppercase">Mais Recentes</h3>
+        <div>
             {
-                data.map((artigoCurrent:any) => (
+                data.map((artigoCurrent: any) => (
                     <div key={artigoCurrent.slug} className="w-full py-2">
                         <Link href={"/blog/" + artigoCurrent.slug}>
                             <div className="rounded-xl bg-gray-200 overflow-hidden shadow-lg shadow-gray-300 flex">
@@ -28,5 +28,18 @@ export default async function BlogRecentes() {
                 ))
             }
         </div>
+    )
+}
+
+export default function BlogRecentes() {
+    return (
+        <>
+            <div className="mb-4 md:mb-10 hidden md:block">
+                <h3 className="text-xl my-2 font-medium text-blue-500 uppercase">Mais Recentes</h3>
+            </div>
+            <Suspense fallback={<LoadingRecentes />}>
+                <ListBlogRecentes />
+            </Suspense>
+        </>
     )
 }

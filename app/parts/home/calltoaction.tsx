@@ -1,4 +1,6 @@
 "use client"
+import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import axios from "axios";
 import { ChangeEvent, FormEvent, useState } from "react";
 
@@ -50,17 +52,19 @@ export default function CallToAction() {
                         </p>
                     </div>
                     <div className="lg:w-5/12">
-                        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
-                            <input type="text" name="name" onChange={handleName} value={name} className="bg-white w-full py-3 px-6 rounded-lg text-lg font-light bg-transparent border border-orange-500 text-orange-500 lg:col-span-2" placeholder="Nome" />
-                            <input type="text" name="email" onChange={handleEmail} value={email} className="bg-white w-full py-3 px-6 rounded-lg text-lg font-light bg-transparent border border-orange-500 text-orange-500" placeholder="E-mail" />
-                            <input type="text" name="phone" onChange={handlePhone} value={phone} className="bg-white w-full py-3 px-6 rounded-lg text-lg font-light bg-transparent border border-orange-500 text-orange-500" placeholder="Telefone" />
-                            <div>
-                                <button type="submit" className="py-1 px-2 md:px-6 rounded-md md:rounded-lg bg-blue-600 transition ease-in-out duration-300 delay-300 text-white uppercase flex justify-center items-center gap-x-2"><FontAwesomeIcon icon={faArrowRight} className="h-4 w-4" /> Enviar</button>
+                        <form onSubmit={onSubmitSend}>
+                            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                                <input type="text" name="name" onChange={handleName} value={name} className="bg-white w-full py-3 px-6 rounded-lg text-lg font-light bg-transparent border border-orange-500 text-orange-500 lg:col-span-2" placeholder="Nome" />
+                                <input type="text" name="email" onChange={handleEmail} value={email} className="bg-white w-full py-3 px-6 rounded-lg text-lg font-light bg-transparent border border-orange-500 text-orange-500" placeholder="E-mail" />
+                                <input type="text" name="phone" onChange={handlePhone} value={phone} className="bg-white w-full py-3 px-6 rounded-lg text-lg font-light bg-transparent border border-orange-500 text-orange-500" placeholder="Telefone" />
+                                <div>
+                                    <button type="submit" className="py-1 px-2 md:px-6 rounded-md md:rounded-lg bg-blue-600 transition ease-in-out duration-300 delay-300 text-white uppercase flex justify-center items-center gap-x-2"><FontAwesomeIcon icon={faArrowRight} className="h-4 w-4" /> Enviar</button>
+                                </div>
                             </div>
-                        </div>
-                        {
-                            (message != '') ? <div id="response-contact" className="w-full"><div className={'wpcf7-response-output w-full text-white my-2 p-2 uppercase text-center font-reading font-bold border-2 border-white  border-dashed ' + colorMessage} role="alert">{message}</div></div> : ''
-                        }
+                            {
+                                (message != '') ? <div id="response-contact" className="w-full"><div className={'wpcf7-response-output w-full text-white my-2 p-2 uppercase text-center font-reading font-bold border-2 border-white  border-dashed ' + colorMessage} role="alert">{message}</div></div> : ''
+                            }
+                        </form>
                     </div>
                 </div>
             </div>

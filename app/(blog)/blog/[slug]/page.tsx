@@ -18,6 +18,7 @@ export async function SingleSlug({ params }: any) {
             </div>
         )
     }
+    return null;
 }
 
 export default function PageBlogSingle({ ...props }: any) {

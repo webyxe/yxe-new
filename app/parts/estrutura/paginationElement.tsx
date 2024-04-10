@@ -1,15 +1,20 @@
 import { Pagination, PaginationContent, PaginationEllipsis, PaginationItem, PaginationLink, PaginationNext, PaginationPrevious, } from "@/components/ui/pagination";
 
 
-export default function PaginationElement({ countTotal, pageCurrent, quantityPerPage, searchParams }: any) {
+export default function PaginationElement({ params, countTotal, pageCurrent, quantityPerPage, searchParams }: any) {
 
     const quantityPage = Math.ceil(countTotal / quantityPerPage);
-    const initialpage = (pageCurrent > 1) ? (pageCurrent - 1) : 1;
-    const searchCurrent = (searchParams > 1) ? "?s=" + searchParams : "";
+    
+    const initialpage = (pageCurrent > 2) ? (pageCurrent - 2) : 1;
+    const searchCurrent = (searchParams.s) ? "?s=" + searchParams.s : "";
     let rows = [];
-    for (var n = initialpage; n <= quantityPage && n <= pageCurrent + 1; n++) {
+    for (var n = initialpage; n <= quantityPage && n <= pageCurrent + 2; n++) {
         rows.push(n);
     }
+    
+
+    const preLink = (params.slug) ? "/tag/" + params.slug + "/p/": "/blog/p/";
+
     if (quantityPage > 1) {
         return (
             <Pagination className='text-blue-500 my-4'>
@@ -17,21 +22,21 @@ export default function PaginationElement({ countTotal, pageCurrent, quantityPer
                     {
                         pageCurrent > 1 ? (
                             <PaginationItem>
-                                <PaginationPrevious className='hover:!text-orange-500 hover:bg-gray-100' href={"/blog/p/" + (pageCurrent - 1) + searchCurrent} />
+                                <PaginationPrevious className='hover:!text-orange-500 hover:bg-gray-100' href={preLink + (pageCurrent - 1) + searchCurrent} />
                             </PaginationItem>
                         ) : null
                     }
                     {
                         rows.map((row) => (
                             <PaginationItem key={row}>
-                                <PaginationLink className='hover:!text-orange-500 hover:bg-gray-100' href={"/blog/p/" + row + searchCurrent}>{row}</PaginationLink>
+                                <PaginationLink className='hover:!text-orange-500 hover:bg-gray-100' href={preLink + row + searchCurrent}>{row}</PaginationLink>
                             </PaginationItem>
                         ))
                     }
                     {
                         pageCurrent < quantityPage ? (
                             <PaginationItem>
-                                <PaginationNext className='hover:!text-orange-500 hover:bg-gray-100' href={"/blog/p/" + (pageCurrent + 1) + searchCurrent} />
+                                <PaginationNext className='hover:!text-orange-500 hover:bg-gray-100' href={preLink + (pageCurrent + 1) + searchCurrent} />
                             </PaginationItem>
                         ) : null
                     }

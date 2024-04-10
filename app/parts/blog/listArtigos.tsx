@@ -27,7 +27,7 @@ export default async function ListArtigos({ params, searchParams }: any) {
                     ))
                 }
             </div>
-            <PaginationElement countTotal={countTotal} pageCurrent={pageCurrent} quantityPerPage={quantityPerPage} searchParams={searchParams} />
+            <PaginationElement params={params} countTotal={countTotal} pageCurrent={pageCurrent} quantityPerPage={quantityPerPage} searchParams={searchParams} />
         </div>
     )
 }

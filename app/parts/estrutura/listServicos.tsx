@@ -4,7 +4,6 @@ import ContentServicos from "@/app/dados/contentServicos";
 
 export default function ListServicos() {
     return (
-
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-1 md:gap-4">
             {
                 ContentServicos.map((singleServicos) => (

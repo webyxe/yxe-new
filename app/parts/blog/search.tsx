@@ -1,10 +1,12 @@
 "use client"
 import { faSearch } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { useSearchParams } from "next/navigation";
 import { ChangeEvent, useState } from "react";
 
-export default function BlogSearch({params}: any) {
-    const placeholderSearch = (params) ? params.s: "";
+export default function BlogSearch() {
+    const searchParams = useSearchParams();
+    const placeholderSearch = (searchParams.get('s')) ? searchParams.get('s'): "";
     const [search, setSearch] = useState(placeholderSearch);
     
     const handleSearch = (e: ChangeEvent<HTMLInputElement>) => {

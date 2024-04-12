@@ -5,7 +5,7 @@ import { Suspense } from "react";
 import { LoadingRecentes } from "../estrutura/loading";
 
 export async function ListBlogRecentes() {
-    const { data } = await axios.get('http://localhost:4000/artigos/recentes');
+    const { data } = await axios.get('https://agenciayxeapi.vercel.app/artigos/recentes');
     return (
         <div>
             {

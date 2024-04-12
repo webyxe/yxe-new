@@ -23,7 +23,7 @@ function TagSingle({children, href}:TagSingleProps ) {
     )
 }
 export default async function BlogTags() {
-    const tags = await axios.get('http://localhost:4000/tags');
+    const tags = await axios.get('https://agenciayxeapi.vercel.app/tags');
     return (
         <div className="mb-2 md:mb-10">
             <h3 className="text-xl my-2 font-medium text-blue-500 uppercase">Tags</h3>

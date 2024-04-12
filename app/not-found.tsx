@@ -1,4 +1,3 @@
-import Image from 'next/image'
 import HeaderTitle from './parts/estrutura/headerTitle'
 
 export default function NotFound() {

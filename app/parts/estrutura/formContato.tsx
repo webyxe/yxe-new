@@ -30,7 +30,7 @@ export default function FormContato() {
         else {
             setMessage('');
             axios.post('https://api.yxe.com.br/contatos/create', {
-                nome: name,
+                name: name,
                 email: email,
                 phone: phone,
             })

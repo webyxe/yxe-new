@@ -30,7 +30,7 @@ const Contato = () => {
                             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-1 xl:grid-cols-2 gap-4">
 
                                 <Link href={ContentLinks.phone}><button type="button" className="w-full bg-white hover:bg-gray-100 transition text-orange-500 font-medium rounded-full py-3 px-2 text-sm flex justify-center items-center "><FontAwesomeIcon icon={faPhone} className="mx-2 h-4 w-4" /> Ligue agora mesmo!</button></Link>
-                                <Link href={ContentLinks.phone2}><button type="button" className="w-full bg-orange-500 hover:bg-orange-600 transition text-white font-medium rounded-full py-3 px-2 text-sm flex justify-center items-center "><FontAwesomeIcon icon={faWhatsapp} className="mx-2 h-4 w-4" /> Envie-nos uma mensagem!</button></Link>
+                                <Link href={ContentLinks.whatsapp}><button type="button" className="w-full bg-orange-500 hover:bg-orange-600 transition text-white font-medium rounded-full py-3 px-2 text-sm flex justify-center items-center "><FontAwesomeIcon icon={faWhatsapp} className="mx-2 h-4 w-4" /> Envie-nos uma mensagem!</button></Link>
                             </div>
                         </div>
                     </div>
@@ -52,7 +52,7 @@ const Contato = () => {
                                     </div>
                                 </div>
                             </Link>
-                            <Link href={ContentLinks.phone2} target="_blank">
+                            {/* <Link href={ContentLinks.phone2} target="_blank">
                                 <div className="flex justify-start items-center px-2 pt-4 pb-6 my-4 rounded-lg bg-gray-200 break-all text-gray-900">
                                     <div className="px-4 md:px-6 text-xl md:text-4xl">
                                         <FontAwesomeIcon icon={faPhone} className="w-6 md:h-10 md:w-10 text-blue-600" />
@@ -62,7 +62,7 @@ const Contato = () => {
                                         <div className="font-light">{ContentLinks.phoneShow2}</div>
                                     </div>
                                 </div>
-                            </Link>
+                            </Link> */}
                             <Link href={ContentLinks.email} target="_blank">
                                 <div className="flex justify-start items-center px-2 pt-4 pb-6 my-4 rounded-lg bg-gray-200 break-all text-gray-900">
                                     <div className="px-4 md:px-6 text-xl md:text-4xl">

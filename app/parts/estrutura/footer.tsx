@@ -50,14 +50,12 @@ const Footer = () => {
                             <div id="menu-principal-footer" className="menu-principal-container uppercase text-sm">
                                 <ul id="footer-nav" className="font-reading">
                                     <li id="nav-menu-item-21" className="py-2">
-                                        <Link href={ContentLinks.email} target="_blank"
-                                            className="main-menu-link text-white hover:text-orange-500 transition break-all flex">
+                                        <Link href={ContentLinks.email} target="_blank" className="main-menu-link text-white hover:text-orange-500 transition break-all flex">
                                             <FontAwesomeIcon className="w-4 h-4 mx-2" icon={faEnvelope} /> {ContentLinks.emailShow}
                                         </Link>
                                     </li>
                                     <li id="nav-menu-item-21" className="py-2">
-                                        <Link href={ContentLinks.phone} target="_blank"
-                                            className="main-menu-link text-white hover:text-orange-500 transition break-all flex">
+                                        <Link href={ContentLinks.phone} target="_blank" className="main-menu-link text-white hover:text-orange-500 transition break-all flex">
                                             <FontAwesomeIcon className="w-4 h-4 mx-2" icon={faWhatsapp} />  {ContentLinks.phoneShow}
                                         </Link>
                                     </li>

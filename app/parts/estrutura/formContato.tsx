@@ -29,7 +29,7 @@ export default function FormContato() {
         else if (!email.toLowerCase().match(/^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|.(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/)) { setMessage('O e-mail digitado não é válido'); }
         else {
             setMessage('');
-            axios.post('https://api.yxe.com.br/contatos/createcontatos/create', {
+            axios.post('https://api.yxe.com.br/contatos/create', {
                 nome: name,
                 email: email,
                 phone: phone,

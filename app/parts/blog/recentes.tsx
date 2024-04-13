@@ -5,7 +5,7 @@ import { Suspense } from "react";
 import { LoadingRecentes } from "../estrutura/loading";
 
 export async function ListBlogRecentes() {
-    const { data } = await axios.get('https://api.yxe.com.br/contatos/createartigos/recentes');
+    const { data } = await axios.get('https://api.yxe.com.br/artigos/recentes');
     return (
         <div>
             {

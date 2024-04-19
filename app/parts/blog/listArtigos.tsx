@@ -7,6 +7,7 @@ export default async function ListArtigos({ params, searchParams }: any) {
 
     const { data } = await ContentArtigos({ params, searchParams });
     const { artigos, countTotal, pageCurrent, quantityPerPage } = data;
+    
     return (
 
         <div className="w-full md:w-2/3 lg:w-3/4">

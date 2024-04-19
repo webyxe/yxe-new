@@ -1,8 +1,6 @@
 import { Pagination, PaginationContent, PaginationEllipsis, PaginationItem, PaginationLink, PaginationNext, PaginationPrevious, } from "@/components/ui/pagination";
 
-
 export default function PaginationElement({ params, countTotal, pageCurrent, quantityPerPage, searchParams }: any) {
-
     const quantityPage = Math.ceil(countTotal / quantityPerPage);
     
     const initialpage = (pageCurrent > 2) ? (pageCurrent - 2) : 1;
@@ -11,7 +9,6 @@ export default function PaginationElement({ params, countTotal, pageCurrent, qua
     for (var n = initialpage; n <= quantityPage && n <= pageCurrent + 2; n++) {
         rows.push(n);
     }
-    
 
     const preLink = (params.slug) ? "/tag/" + params.slug + "/p/": "/blog/p/";
 

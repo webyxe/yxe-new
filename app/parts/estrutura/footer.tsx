@@ -42,6 +42,11 @@ const Footer = () => {
                                             Contato
                                         </Link>
                                     </li>
+                                    <li id="nav-menu-item-25" className="py-2">
+                                        <Link href="/privacidade" className="main-menu-link text-white hover:text-orange-500 transition">
+                                            Política de Privacidade
+                                        </Link>
+                                    </li>
                                 </ul>
                             </div>
                         </div>

@@ -3,7 +3,7 @@ import HeaderTitle from "@/app/parts/estrutura/headerTitle";
 export default function Privacidade() {
     return (
         <div>
-            <HeaderTitle titlePage="POLÍTICA DE PRIVACIDADE" />
+            <HeaderTitle titlePage="Política de Privacidade" />
             <section id="servicos" className="py-10">
                 <div className="container max-w-4xl mx-auto px-4 text-justify">
                     <h2 className="font-bold mt-4">Política Privacidade </h2>

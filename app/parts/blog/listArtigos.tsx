@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import PaginationElement from "../estrutura/paginationElement";
-import ContentArtigos from "@/app/dados/contentArtigos";
+import ContentArtigos from "@/app/parts/dados/contentArtigos";
 
 export default async function ListArtigos({ params, searchParams }: any) {
 

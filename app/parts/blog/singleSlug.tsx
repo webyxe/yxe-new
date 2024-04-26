@@ -1,4 +1,4 @@
-import ContentArtigosSingle from "@/app/dados/contentArtigosSingle";
+import ContentArtigosSingle from "@/app/parts/dados/contentArtigosSingle";
 import parse from 'html-react-parser';
 
 export default async function SingleSlug({ params }: any) {

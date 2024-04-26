@@ -1,4 +1,4 @@
-import ContentLinks from "@/app/dados/contentLinks";
+import ContentLinks from "@/app/parts/dados/contentLinks";
 import { faFacebook, faInstagram, faWhatsapp } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";

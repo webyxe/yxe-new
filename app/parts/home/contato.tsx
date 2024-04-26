@@ -4,7 +4,7 @@ import { faMapMarkerAlt, faPhone } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Link from "next/link";
 import FormContato from "@/app/parts/estrutura/formContato";
-import ContentLinks from "@/app/dados/contentLinks";
+import ContentLinks from "@/app/parts/dados/contentLinks";
 
 const Contato = () => {
     return (

@@ -1,6 +1,6 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Link from "next/link";
-import ContentServicos from "@/app/dados/contentServicos";
+import ContentServicos from "@/app/parts/dados/contentServicos";
 
 export default function ListServicos() {
     return (

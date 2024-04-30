@@ -7,7 +7,7 @@ const ContentLinks = {
     emailShow: 'atendimento@yxe.com.br',
 
 	phone: 'tel:+5521964771686',
-    whatsapp: 'https://wa.me/5521964771686',
+    whatsapp: 'https://api.whatsapp.com/send?phone=5521964771686',
     phoneShow: '(21) 96477-1686',
 
 	phone2: 'tel:+552131180419',

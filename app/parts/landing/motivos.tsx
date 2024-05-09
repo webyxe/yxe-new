@@ -18,7 +18,7 @@ const Motivos = () => {
                         </div>
                         <div className="lg:w-3/6 p-4 z-20 flex flex-col gap-4">
                             
-                            <div className="md:flex h-full bg-gray-200 justify-content rounded-xl items-center py-4 px-2 group">
+                            <div className="md:flex h-full bg-gray-200 justify-content rounded-xl items-center py-4 px-4 group">
                                 <div className="w-24 flex justify-center items-center">
                                     <FontAwesomeIcon icon={faSquareCheck} className="text-orange-500 text-4xl" />
                                 </div>
@@ -29,7 +29,7 @@ const Motivos = () => {
                                     </div>
                                 </div>
                             </div>
-                            <div className="md:flex h-full bg-gray-200 justify-content rounded-xl items-center py-4 px-2 group">
+                            <div className="md:flex h-full bg-gray-200 justify-content rounded-xl items-center py-4 px-4 group">
                                 <div className="w-24 flex justify-center items-center">
                                     <FontAwesomeIcon icon={faLightbulb} className="text-orange-500 text-4xl" />
                                 </div>
@@ -40,7 +40,7 @@ const Motivos = () => {
                                     </div>
                                 </div>
                             </div>
-                            <div className="md:flex h-full bg-gray-200 justify-content rounded-xl items-center py-4 px-2 group">
+                            <div className="md:flex h-full bg-gray-200 justify-content rounded-xl items-center py-4 px-4 group">
                                 <div className="w-24 flex justify-center items-center">
                                     <FontAwesomeIcon icon={faHandshake} className="text-orange-500 text-4xl" />
                                 </div>
@@ -51,7 +51,7 @@ const Motivos = () => {
                                     </div>
                                 </div>
                             </div>
-                            <div className="md:flex h-full bg-gray-200 justify-content rounded-xl items-center py-4 px-2 group">
+                            <div className="md:flex h-full bg-gray-200 justify-content rounded-xl items-center py-4 px-4 group">
                                 <div className="w-24 flex justify-center items-center">
                                     <FontAwesomeIcon icon={faHeadset} className="text-orange-500 text-4xl" />
                                 </div>

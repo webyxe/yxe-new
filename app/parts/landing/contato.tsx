@@ -27,7 +27,7 @@ const Contato = () => {
                         <div className="text-sm md:text-xl rounded-xl">
                             <div className="text-md md:text-lg p-4 md:p-6 my-3 md:mt-0">
                                 <div className="">
-                                    <h3 className=" text-xl md:text-2xl pb-6 text-orange-500">Juntos, podemos construir um futuro melhor.</h3>
+                                    <h3 className="texd-lg lg:text-xl xl:text-2xl pb-6 text-orange-500">Juntos, podemos construir um futuro melhor.</h3>
                                     <FormContato />
                                 </div>
                             </div>

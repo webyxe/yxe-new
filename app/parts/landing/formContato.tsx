@@ -44,16 +44,16 @@ export default function FormContato() {
     return (
         <form onSubmit={onSubmitSend}>
             <div className="grid grid-cols-1 gap-6">
-                <input type="text" name="name" onChange={handleName} value={name} className="bg-gray-300 w-full py-3 px-6 rounded-lg text-lg font-light bg-transparent text-gray-900 shadow-sm" placeholder="Nome" />
-                <input type="text" name="email" onChange={handleEmail} value={email} className="bg-gray-300 w-full py-3 px-6 rounded-lg text-lg font-light bg-transparent text-gray-900 shadow-sm" placeholder="E-mail" />
-                <input type="text" name="phone" onChange={handlePhone} value={phone} className="bg-gray-300 w-full py-3 px-6 rounded-lg text-lg font-light bg-transparent text-gray-900 shadow-sm" placeholder="Telefone" />
-                <div className="flex text-xl">
-                    <div className="mr-4">candidato à: </div>
-                    <label htmlFor="vereador" className="flex mx-2">
+                <input type="text" name="name" onChange={handleName} value={name} className="bg-white w-full py-3 px-6 rounded-lg text-lg font-light bg-transparent text-gray-900 shadow-sm" placeholder="Nome" />
+                <input type="text" name="email" onChange={handleEmail} value={email} className="bg-white w-full py-3 px-6 rounded-lg text-lg font-light bg-transparent text-gray-900 shadow-sm" placeholder="E-mail" />
+                <input type="text" name="phone" onChange={handlePhone} value={phone} className="bg-white w-full py-3 px-6 rounded-lg text-lg font-light bg-transparent text-gray-900 shadow-sm" placeholder="Telefone" />
+                <div className="block sm:flex text-sm md:text-sm lg:text-xl">
+                    <div className="mr-2 md:mr-4 py-1 sm:py-0">candidato à: </div>
+                    <label htmlFor="vereador" className="flex mx-2 py-1 sm:py-0">
                         <div><input type="radio" className="bg-blue-600 border-none" name="tipo" value="vereador" id="vereador" /></div>
                         <div className="text-orange-500 mx-2">Vereador</div>
                     </label>
-                    <label htmlFor="prefeito" className="flex mx-2">
+                    <label htmlFor="prefeito" className="flex mx-2 py-1 sm:py-0">
                         <div><input type="radio" className="bg-blue-600 border-none" name="tipo" value="prefeito" id="prefeito" /></div>
                         <div className="text-orange-500 mx-2">Prefeito</div>
                     </label>

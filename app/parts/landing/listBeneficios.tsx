@@ -1,5 +1,5 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBullhorn, faCheckSquare, faHandHoldingDollar, faHeadset, faMicrochip, faMobile, faPeoplePulling, faScrewdriverWrench, faSolarPanel, faUsers } from "@fortawesome/free-solid-svg-icons";
+import { faBullhorn, faChartSimple, faCheckSquare, faHandHoldingDollar, faHeadset, faMagnifyingGlass, faMicrochip, faMobile, faPeoplePulling, faScrewdriverWrench, faSolarPanel, faUsers } from "@fortawesome/free-solid-svg-icons";
 import Link from "next/link";
 import { faFileLines } from "@fortawesome/free-regular-svg-icons";
 
@@ -28,12 +28,12 @@ export default function listBeneficios() {
     {
         slug: "tecnologia-de-ponta",
         title: "Análise de Dados",
-        icon: faMicrochip,
+        icon: faChartSimple,
     },
     {
         slug: "as-melhores-marcas",
         title: "Pesquisa de Mercado",
-        icon: faCheckSquare,
+        icon: faMagnifyingGlass,
     },
 
 ]; 

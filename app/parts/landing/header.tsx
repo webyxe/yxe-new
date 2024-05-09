@@ -36,7 +36,7 @@ const Header = () => {
                                 <li><Link href="#servicos" className={"px-3 text-white hover:text-orange-500 transition " + ((urlPath == "/contato") ? "!text-orange-500" : null) }>Serviços</Link></li>
                                 <li><Link href="#contato" className={"px-3 text-white hover:text-orange-500 transition " + ((urlPath == "/contato") ? "!text-orange-500" : null) }>Contato</Link></li>
                             </ul>
-                            <Link href="#" onClick={menuBurger}>
+                            <Link href="#" onClick={menuBurger} className="block md:hidden">
                                 <div className={"hamburger hamburger-white hamburger--squeeze px-4 " + menuActive}>
                                     <div className="hamburger-box">
                                         <div className="hamburger-inner"></div>

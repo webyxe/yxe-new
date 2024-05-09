@@ -3,13 +3,19 @@ import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import axios from "axios";
 import { ChangeEvent, FormEvent, useState } from "react";
+interface propsField {
+    fields: String;
+}
 
-export default function FormContato() {
+
+export default function FormContato(props: propsField) {
+    console.log(props.fields);
     const [message, setMessage] = useState('');
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
     const [phone, setPhone] = useState('');
     const [colorMessage, setColorMessage] = useState('bg-red-700');
+    const colorField = (props.fields == 'gray') ? 'bg-zinc-200' : 'bg-white';
 
     const handleName = (e: ChangeEvent<HTMLInputElement>) => {
         setName(e.target.value);
@@ -44,9 +50,9 @@ export default function FormContato() {
     return (
         <form onSubmit={onSubmitSend}>
             <div className="grid grid-cols-1 gap-6">
-                <input type="text" name="name" onChange={handleName} value={name} className="bg-white w-full py-3 px-6 rounded-lg text-lg font-light bg-transparent text-gray-900 shadow-sm" placeholder="Nome" />
-                <input type="text" name="email" onChange={handleEmail} value={email} className="bg-white w-full py-3 px-6 rounded-lg text-lg font-light bg-transparent text-gray-900 shadow-sm" placeholder="E-mail" />
-                <input type="text" name="phone" onChange={handlePhone} value={phone} className="bg-white w-full py-3 px-6 rounded-lg text-lg font-light bg-transparent text-gray-900 shadow-sm" placeholder="Telefone" />
+                <input type="text" name="name" onChange={handleName} value={name} className={"w-full py-3 px-6 rounded-lg text-lg font-light bg-transparent text-gray-900 shadow-sm " + colorField} placeholder="Nome" />
+                <input type="text" name="email" onChange={handleEmail} value={email} className={"w-full py-3 px-6 rounded-lg text-lg font-light bg-transparent text-gray-900 shadow-sm " + colorField} placeholder="E-mail" />
+                <input type="text" name="phone" onChange={handlePhone} value={phone} className={"w-full py-3 px-6 rounded-lg text-lg font-light bg-transparent text-gray-900 shadow-sm " + colorField} placeholder="Telefone" />
                 <div className="block sm:flex text-sm md:text-sm lg:text-xl">
                     <div className="mr-2 md:mr-4 py-1 sm:py-0">candidato à: </div>
                     <label htmlFor="vereador" className="flex mx-2 py-1 sm:py-0">

@@ -18,7 +18,7 @@ export default function Banner() {
                         <div className="w-full md:w-1/2 flex justify-center items-center bg-feature bg-contain bg-bottom bg-no-repeat h-full">
                             <div className="bg-white w-full px-6 py-8 rounded-xl">
                                 <h3 className="text-lg lg:text-xl xl:text-2xl pb-6 text-orange-500">Juntos, podemos construir um futuro melhor.</h3>
-                                <FormContato />
+                                <FormContato fields="gray" />
                             </div>
                         </div>
                     </div>

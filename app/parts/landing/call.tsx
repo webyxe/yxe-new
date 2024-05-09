@@ -17,7 +17,7 @@ marketing político!</h3>
                         <p className="text-center lg:text-left text-white md:text-lg font-light">Nós temos as melhores estratégias de crescimento para a sua campanha eleitoral.</p>
                     </div>
                     <div className="lg:w-5/12 flex flex-col justify-center items-center">
-                        <Link href={ContentLinks.whatsapp}><button type="button" className="bg-orange-500 hover:bg-orange-600 transition text-white font-medium rounded-full my-4 py-2 md:py-3 px-8 md:px-10 xl:px-16 block text-lg mx-auto uppercase">Solicite um orçamento</button></Link>
+                        <Link href={ContentLinks.whatsapp} target="_blank"><button type="button" className="bg-orange-500 hover:bg-orange-600 transition text-white font-medium rounded-full my-4 py-2 md:py-3 px-8 md:px-10 xl:px-16 block text-lg mx-auto uppercase">entrar em contato</button></Link>
                     </div>
                 </div>
             </div>

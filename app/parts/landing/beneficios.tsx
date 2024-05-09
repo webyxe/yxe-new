@@ -10,7 +10,7 @@ const Beneficios = () => {
             <div className="container mx-auto px-4">
                 <h2 className="text-xl md:text-3xl uppercase py-6 text-center text-white">Nossos Serviços:</h2>
                 <ListBeneficios />
-                <Link href={ContentLinks.whatsapp}><button type="button" className="block mx-auto bg-blue-600 hover:bg-blue-700 transition text-white font-medium rounded-md my-2 py-3 px-8 text-base uppercase">EU QUERO ECONOMIZAR</button></Link>
+                <Link href={ContentLinks.whatsapp}><div className="text-white text-center py-8 text-lg">E muito mais...</div></Link>
             </div>
         </section>
     );

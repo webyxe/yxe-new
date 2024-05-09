@@ -59,7 +59,7 @@ export default function FormContato() {
                     </label>
                 </div>
                 <div>
-                    <button type="submit" className="py-1 px-2 md:px-6 rounded-md md:rounded-lg bg-blue-600 transition ease-in-out duration-300 delay-300 text-white uppercase flex justify-center items-center gap-x-2"><FontAwesomeIcon icon={faArrowRight} className="h-4 w-4" /> Enviar</button>
+                    <button type="submit" className="py-2 px-4 md:px-8 rounded-md md:rounded-lg bg-blue-600 hover:bg-blue-700 transition ease-in-out duration-300 delay-300 text-white uppercase flex justify-center items-center gap-x-2"><FontAwesomeIcon icon={faArrowRight} className="h-4 w-4" /> Enviar</button>
                 </div>
             </div>
             {

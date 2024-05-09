@@ -16,8 +16,8 @@ const Contato = () => {
                                 <div className="text-lg md:text-xl pb-8">
                                     <h3 className="font-normal text-blue-600 uppercase text-4xl">Seja o Líder que <br /> Seu Povo Merece.</h3>
                                 </div>
-                                <div className="text-3xl font-medium pb-8">
-                                    Não deixe sua mensagem se perder no ruído político. Com o Group YXE, você terá a vantagem competitiva necessária para se destacar. Entre em contato conosco hoje mesmo e descubra como podemos transformar sua visão política em realidade.
+                                <div className="text-2xl font-light pb-8">
+                                    Não deixe sua mensagem se perder no ruído político. Com o Group YXE, você terá a <span className="font-medium">vantagem competitiva</span> necessária para se <span className="font-medium">destacar</span>. Entre em contato conosco hoje mesmo e descubra como podemos <span className="font-medium">transformar sua visão política em realidade</span>.
                                 </div>
                                 <div>
                                     <Link className="block" href={ContentLinks.whatsapp}><button type="button" className="py-2 px-6 text-base rounded-md bg-orange-500 hover:bg-orange-600 transition ease-in-out duration-300 delay-300 text-white uppercase flex justify-center items-center gap-x-2"><FontAwesomeIcon icon={faArrowRight} />fale com um consultor</button></Link>

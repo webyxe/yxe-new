@@ -12,7 +12,7 @@ export default function Banner() {
                 <div className="container mx-auto px-10 md:px-4 h-full">
                     <div className="md:flex items-center justify-center gap-x-10 h-full pt-20">
                         <div className="w-full md:w-1/2 h-full flex flex-col justify-center">
-                            <h1 className="!leading-tight xl:!leading-snug font-light text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl text-white py-4 2xl:py-6 text-center md:text-left">Descubra como a YXE pode <span className="font-medium">transformar sua candidatura</span> em uma <span className="font-medium">história de sucesso político</span>.</h1>
+                            <h1 className="!leading-tight xl:!leading-snug font-light text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-5xl text-white py-4 2xl:py-6 text-center md:text-left">Descubra como a YXE pode <span className="font-semibold">transformar sua candidatura</span> em uma <span className="font-semibold">história de sucesso político</span>.</h1>
                             <Link href={ContentLinks.whatsapp}><button type="button" className="block bg-orange-500 hover:bg-zinc-100 transition text-white font-medium rounded-md my-2 py-3 px-8 text-base uppercase mx-auto md:mx-0">SAIBA MAIS</button></Link>
                         </div>
                         <div className="w-full md:w-1/2 flex justify-center items-center bg-feature bg-contain bg-bottom bg-no-repeat h-full">

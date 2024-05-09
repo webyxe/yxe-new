@@ -8,7 +8,7 @@ const Card = (props: any) => {
     return (
         <div className="md:flex flex-row-reverse h-full bg-blue-700 justify-center rounded-xl items-center p-4 sm:p-6 group bg-reports bg-center bg-contain bg-no-repeat">
             <div className="w-full md:w-1/2">
-                <Image src={props.info.img} className="w-2/3 mx-auto object-cover aspect-square rounded-full border border-blue-600 " width={342} height={342} alt={props.info.title} />
+                <Image src={props.info.img} className="w-2/3 mx-auto object-cover aspect-square rounded-full border-2 border-blue-600 mb-4 " width={342} height={342} alt={props.info.title} />
             </div>
             <div className="w-full md:w-1/2">
                 <div className="mb-4 text-center md:text-left">
@@ -21,7 +21,7 @@ const Card = (props: any) => {
     );
 }
 
-const Politicos = () => {
+const Legado = () => {
     const services = [
         {
             slug: 'wilson',
@@ -54,7 +54,7 @@ const Politicos = () => {
     ];
     return (
         <>
-            <section className="py-10 md:py-16 z-10 relative bg-blue-600 bg-legado bg-cover bg-center">
+            <section className="py-10 md:py-16 z-10 relative bg-blue-600 bg-legado bg-cover bg-center" id="legado">
                 <div className="z-20 relative container mx-auto px-4">
                     <div className="mt-4 mb-10">
                         <h2 className="text-orange-500 py-4 text-center text-xl lg:text-3xl uppercase">Nosso Legado de Sucesso:</h2>
@@ -72,4 +72,4 @@ const Politicos = () => {
         </>
     );
 }
-export default Politicos;
+export default Legado;

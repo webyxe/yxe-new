@@ -12,11 +12,11 @@ export default function Call() {
             <div className="container mx-auto px-4">
                 <div className="block lg:flex">
                     <div className="lg:w-7/12">
-                        <h3 className="text-center lg:text-left text-zinc-100 text-xl md:text-3xl uppercase py-4 font-medium">Converse com quem realmente entende de marketing político!</h3>
-                        <p className="text-center lg:text-left text-white md:text-lg font-light">Nós temos as melhores estratégias de crescimento para a sua campanha eleitoral.</p>
+                        <h3 className="text-center lg:text-left text-zinc-100 text-lg md:text-xl lg:text-3xl uppercase py-4 font-medium">Converse com quem realmente entende de marketing político!</h3>
+                        <p className="text-center lg:text-left text-white text-sm md:text-lg font-light">Nós temos as melhores estratégias de crescimento para a sua campanha eleitoral.</p>
                     </div>
                     <div className="lg:w-5/12 flex flex-col justify-center items-center">
-                        <Link href={ContentLinks.whatsapp} target="_blank"><button type="button" className="bg-orange-500 hover:bg-orange-600 transition text-white font-medium rounded-full my-4 py-2 md:py-3 px-8 md:px-10 xl:px-16 block text-lg mx-auto uppercase">entrar em contato</button></Link>
+                        <Link href={ContentLinks.whatsapp} target="_blank"><button type="button" className="bg-orange-500 hover:bg-orange-600 transition text-white font-medium rounded-full my-4 py-2 md:py-3 px-8 md:px-10 xl:px-16 block text-base md:text-lg mx-auto uppercase">entrar em contato</button></Link>
                     </div>
                 </div>
             </div>

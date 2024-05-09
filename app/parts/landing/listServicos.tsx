@@ -3,7 +3,7 @@ import { faBullhorn, faChartSimple, faCheckSquare, faHandHoldingDollar, faHeadse
 import Link from "next/link";
 import { faFileLines } from "@fortawesome/free-regular-svg-icons";
 
-export default function listBeneficios() {
+export default function listServicos() {
     const ContentBeneficios = [
     {
         slug: "economia-de-ate-95-na-sua-conta-de-energia",

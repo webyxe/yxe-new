@@ -1,28 +1,29 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCheckSquare, faHandHoldingDollar, faHeadset, faMicrochip, faScrewdriverWrench, faSolarPanel } from "@fortawesome/free-solid-svg-icons";
+import { faBullhorn, faCheckSquare, faHandHoldingDollar, faHeadset, faMicrochip, faMobile, faPeoplePulling, faScrewdriverWrench, faSolarPanel, faUsers } from "@fortawesome/free-solid-svg-icons";
 import Link from "next/link";
+import { faFileLines } from "@fortawesome/free-regular-svg-icons";
 
 export default function listBeneficios() {
     const ContentBeneficios = [
     {
         slug: "economia-de-ate-95-na-sua-conta-de-energia",
         title: "Estratégia de Campanha",
-        icon: faHandHoldingDollar,
+        icon: faBullhorn,
     },
     {
         slug: "instalacao-rapida-facil",
         title: "Gestão de Redes Sociais",
-        icon: faScrewdriverWrench,
+        icon: faMobile,
     },
     {
         slug: "equipamentos-duraveis",
         title: "Publicidade Online",
-        icon: faSolarPanel,
+        icon: faUsers,
     },
     {
         slug: "suporte-tecnico-humanizado",
         title: "Desenvolvimento de Conteúdo",
-        icon: faHeadset,
+        icon: faFileLines,
     },
     {
         slug: "tecnologia-de-ponta",

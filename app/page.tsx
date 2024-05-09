@@ -1,3 +1,4 @@
+import Template from "./(padrao)/template";
 import Banner from "./parts/home/banner";
 import Canais from "./parts/home/canais";
 import Contato from "./parts/home/contato";
@@ -10,14 +11,16 @@ import VideoHome from "./parts/home/videoHome";
 export default function Home() {
     return (
         <div>
-            <Banner />
-            <QuemSomos />
-            <Servicos />
-            <Estrutura />
-            {/* <Portfolio /> */}
-            <VideoHome />
-            <Canais />
-            <Contato />
+            <Template>
+                <Banner />
+                <QuemSomos />
+                <Servicos />
+                <Estrutura />
+                {/* <Portfolio /> */}
+                <VideoHome />
+                <Canais />
+                <Contato />
+            </Template>
         </div>
     );
 }

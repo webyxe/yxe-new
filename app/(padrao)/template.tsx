@@ -1,5 +1,5 @@
-import Footer from "./parts/estrutura/footer";
-import Header from "./parts/estrutura/header";
+import Footer from "@/app/parts/estrutura/footer";
+import Header from "@/app/parts/estrutura/header";
 
 const Template = ({children}:any) => {
     return(

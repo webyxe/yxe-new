@@ -60,6 +60,11 @@ body {
     transition-duration: 0.15s;
     transition-timing-function: ease;
 }
+.hamburger-white .hamburger-inner,
+.hamburger-white .hamburger-inner::before,
+.hamburger-white .hamburger-inner::after {
+    @apply !bg-white;
+}
 .hamburger-inner::before,
 .hamburger-inner::after {
     content: "";

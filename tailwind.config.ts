@@ -32,11 +32,16 @@ const config = {
                 "foto-7": "url('/img/foto-7.png')",
                 "foto-8": "url('/img/foto-8.png')",
                 "foto-9": "url('/img/foto-9.png')",
+                "landing": "url('/img/landing/banner.png')",
+                "legado": "url('/img/landing/fundo-legado.png')",
+                "servicos": "url('/img/landing/fundo-servicos.png')",
+                "reports": "url('/img/landing/bg-reports.png')"
             },
             colors: {
                 blue: {
                     '500': '#1B2AE9',
                     '600': '#022873',
+                    '700': '#031e53',
                 },
                 orange: {
                     '500': '#F23005',

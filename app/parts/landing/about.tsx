@@ -5,7 +5,7 @@ import ContentLinks from "../dados/contentLinks";
 const About = () => {
     return (
         <>
-            <section className="pt-10 md:pt-16 z-10 relative" id="sobre">
+            <section id="sobre" className="pt-10 md:pt-16 z-10 relative">
                 <div className="z-20 relative container mx-auto px-4">
                     <div className="block lg:flex md:flex-row-reverse items-center">
                         <div className="lg:w-3/6 p-4 z-20 lg:pb-24 lg:pt-12">

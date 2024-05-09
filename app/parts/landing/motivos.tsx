@@ -9,7 +9,7 @@ import { faHeadset, faPhone, faPhoneSquare } from "@fortawesome/free-solid-svg-i
 const Motivos = () => {
     return (
         <>
-            <section className="pt-10 md:pt-16 z-10 relative">
+            <section id="vantagens" className="pt-10 md:pt-16 z-10 relative">
                 <div className="z-20 relative container mx-auto px-4">
                     <h2 className="text-blue-600 py-4 text-center text-xl lg:text-3xl uppercase">Por que Escolher Group YXE?</h2>
                     <div className="block lg:flex items-center">

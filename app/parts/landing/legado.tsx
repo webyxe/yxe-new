@@ -54,7 +54,7 @@ const Legado = () => {
     ];
     return (
         <>
-            <section className="py-10 md:py-16 z-10 relative bg-blue-600 bg-legado bg-cover bg-center" id="legado">
+            <section id="legado" className="py-10 md:py-16 z-10 relative bg-blue-600 bg-legado bg-cover bg-center">
                 <div className="z-20 relative container mx-auto px-4">
                     <div className="mt-4 mb-10">
                         <h2 className="text-orange-500 py-4 text-center text-xl lg:text-3xl uppercase">Nosso Legado de Sucesso:</h2>

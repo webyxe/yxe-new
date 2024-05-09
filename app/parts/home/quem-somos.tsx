@@ -9,7 +9,7 @@ const QuemSomos = () => {
             <Image src="/img/detalhe-x.png" width={140} height={140} className="absolute z-10 opacity-80 w-16 md:w-20 lg:w-24 xl:w-28 2xl:w-32 right-6 md:right-10 lg:right-10 xl:right-10 2xl:right-10 top-12 md:top-12 lg:top-12 xl:top-12 2xl:top-12" alt="" />
             <div className="relative container z-20 mx-auto px-4">
                 <div className="block lg:flex items-center flex-row-reverse">
-                    <div className="lg:w-3/6 flex justify-content items-center">
+                    <div className="lg:w-3/6 flex justify-center items-center">
                         <Image src="/img/foto-1.png" width={500} height={500} alt="" className="w-1/3 lg:w-2/3 rounded-full object-cover aspect-square mx-auto" />
                     </div>
                     <div className="lg:w-3/6">

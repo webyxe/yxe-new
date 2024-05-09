@@ -10,7 +10,7 @@ const PageSobre = () => {
             <section className="py-10 md:py-16 z-10 relative ">
                 <div className="z-20 relative container mx-auto px-4">
                     <div className="block lg:flex items-center">
-                        <div className="lg:w-3/6 flex justify-content items-center p-4">
+                        <div className="lg:w-3/6 flex justify-center items-center p-4">
                             <Image src="/img/foto-1.png" width={720} height={405} alt="Agência YXE" className="w-2/3 mx-auto rounded-full object-cover aspect-square" />
                         </div>
                         <div className="lg:w-3/6 p-4">

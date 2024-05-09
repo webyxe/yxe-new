@@ -38,13 +38,13 @@ export default function listBeneficios() {
 
 ]; 
     return (
-        <div className="grid grid-cols-2 lg:grid-cols-3 gap-4 md:gap-10">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-10">
             {
                 ContentBeneficios.map((singleServicos) => (
                     <div key={singleServicos.slug}>
-                        <div className="h-full sm:h-64 bg-white rounded-xl sm:rounded-3xl text-center flex flex-col justify-center items-center text-white text-lg sm:text-2xl px-2 py-4 md:p-4">
-                            <FontAwesomeIcon icon={singleServicos.icon} className="h-14 w-14 text-4xl mx-auto text-blue-600" />
-                            <h3 className="text-xs md:text-xl py-6 text-black ">{singleServicos.title}</h3>
+                        <div className="h-full sm:h-64 bg-white rounded-xl sm:rounded-3xl text-center flex flex-col justify-center items-center text-white text-lg sm:text-2xl px-2 py-8 md:p-4">
+                            <FontAwesomeIcon icon={singleServicos.icon} className="h-8 sm:h-14 w-8 sm:w-14 text-2xl lg:text-4xl mx-auto text-blue-600 pb-6" />
+                            <h3 className="text-xs sm:text-xl text-black ">{singleServicos.title}</h3>
                         </div>
                     </div>
                 ))

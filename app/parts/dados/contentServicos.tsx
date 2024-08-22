@@ -1,5 +1,6 @@
 import { faFacebook } from "@fortawesome/free-brands-svg-icons";
-import { faBullhorn, faGlobe, faMobileButton, faPenRuler, faPlay, faSearch, faTv, faUsers } from "@fortawesome/free-solid-svg-icons";
+import { faFileLines } from "@fortawesome/free-regular-svg-icons";
+import { faBullhorn, faGlobe, faMobileButton, faPaintBrush, faPenRuler, faPlay, faSearch, faTv, faUsers } from "@fortawesome/free-solid-svg-icons";
 
 const ContentServicos = [
     {
@@ -39,16 +40,16 @@ const ContentServicos = [
         icon: faGlobe,
     },
     {
-        slug: "video-marketing",
-        title: "Vídeo Marketing",
-        content: "Catapulte sua marca. Conte histórias envolventes e conquiste seu público com nosso serviço de vídeo marketing.",
-        icon: faPlay,
+        slug: "producao-conteudo",
+        title: "Produção de Conteúdo",
+        content: "Oferecemos serviços de produção de conteúdo criativo e estratégico para agências de publicidade, potencializando campanhas e fortalecendo marcas no mercado.",
+        icon: faFileLines,
     },
     {
-        slug: "comerciais-de-tv",
-        title: "Comerciais de TV",
-        content: "Domine o ar. Atraia espectadores e impulsione vendas com nossos comerciais de TV memoráveis.",
-        icon: faTv,
+        slug: "design-grafico",
+        title: "Design Gráfico",
+        content: "Criamos design gráfico impactante e criativo, transformando ideias em visuais que comunicam a identidade da marca de forma eficaz.",
+        icon: faPaintBrush,
     },
 
 ]; 

@@ -9,7 +9,6 @@ const Estrutura = () => {
                             <li className="my-4 md:my-8">Estrutura completa de agência para produzir materiais exclusivos</li>
                             <li className="my-4 md:my-8">Ampla experiência com Varejo.</li>
                             <li className="my-4 md:my-8">Expertise em marketing digital e publicidade tradicional</li>
-                            <li className="my-4 md:my-8">Agência Completa: Não só criamos divulgações, como desenvolvemos, produzimos e analisamos resultados.</li>
                         </ul>
                     </div>
                     <div>

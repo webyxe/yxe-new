@@ -17,7 +17,7 @@ export default function Home() {
                 <Servicos />
                 <Estrutura />
                 {/* <Portfolio /> */}
-                <VideoHome />
+                {/* <VideoHome /> */}
                 <Canais />
                 <Contato />
             </Template>

@@ -42,7 +42,7 @@ const ContentServicos = [
     {
         slug: "producao-conteudo",
         title: "Produção de Conteúdo",
-        content: "Oferecemos serviços de produção de conteúdo criativo e estratégico para agências de publicidade, potencializando campanhas e fortalecendo marcas no mercado.",
+        content: "Oferecemos serviços de produção de conteúdo criativo e estratégico, potencializando e fortalecendo a sua marca!",
         icon: faFileLines,
     },
     {
